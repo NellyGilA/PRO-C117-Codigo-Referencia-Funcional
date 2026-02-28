@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad del alumno</title>
+</head>
+
+<body>
+
+    <!--Fecha-->
+    <div>
+        <h4 id='display_date'>FECHA</h4>
+    </div>
+
+    <!--Entrada de texto-->
+    <div>
+        <h4>Ingresa el texto</h4>
+        <textarea id="text" rows="4" maxlength="200"
+            placeholder="¿Qué tal tu día?"></textarea>
+        <br><br>
+    </div>
+
+    <!--Botón-->
+    <div>
+        <button id="predict_button" type="button">
+            Predecir emoción
+        </button>
+    </div>
+
+    <!--Resultado-->
+    <div>
+        <p id="prediction"></p>
+        <img id="emo_img_url" width="55">
+    </div>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+</html>

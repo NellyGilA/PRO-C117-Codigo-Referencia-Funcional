@@ -1,0 +1,22 @@
+python -m venv EV
+EV\Scripts\activate
+
+pip install flask
+pip install pandas
+pip install numpy
+
+pip install tensorflow==2.15.0
+
+-----------------------------------------------------------------------------------------------------------
+Nota: Para tu proyecto (Python 3.9.13 o 3.11.4, Flask + modelo .h5 de Keras), la versión recomendada y más estable es:
+
+✅ TensorFlow 2.15.0
+
+Es compatible con:
+
+Python 3.9
+Python 3.10
+Python 3.11
+
+Modelos .h5 guardados con Keras
+
